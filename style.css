@@ -3,12 +3,8 @@
     margin: 0;
 }
 
-/* body {
-  background-color: #000;
-} */
-
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -21,6 +17,10 @@ nav {
     width: 75%;
     position: fixed;
     top: 0;
+    background: #f5f5f540;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 30px #0000001b;
+    box-shadow: inset 0px 0px 8px 8px #ebf2f7aa;
 }
 
 a {
@@ -29,13 +29,6 @@ a {
 
 ul {
     list-style: none;
-}
-
-nav {
-    background: #ffffff40;
-    box-shadow: 0 4px 30px #0000001b;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
 }
 
 #home,
@@ -52,4 +45,22 @@ nav {
 #img_conatiner img {
     border-radius: 50%;
     object-fit: cover;
+}
+
+#about_head {
+    height: 25%;
+}
+
+#about_me {
+    height: 75%;
+}
+
+#about_me img {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+}
+
+#about_card {
+    height: 100px;
 }

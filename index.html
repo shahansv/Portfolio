@@ -10,17 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 
-    <!--FONT-AWESOME  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FONT AWESOME PRO -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.0/css/all.css" />
 
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <header class="d-flex justify-content-center">
-        <nav class="border mt-2 rounded-5 d-flex align-items-center justify-content-between">
+        <nav class="mt-2 rounded-5 d-flex align-items-center justify-content-between">
             <h4 class="m-0"><a href="" class="text-dark ms-5">shahan.sv</a></h4>
             <ul class="d-flex m-0">
                 <li>
@@ -30,13 +28,13 @@
                     <a href="#about" class="btn btn-outline-dark border-0 rounded-5 mx-1">About</a>
                 </li>
                 <li>
-                    <a href="" class="btn btn-outline-dark border-0 rounded-5 mx-1">Skill</a>
+                    <a href="#skills" class="btn btn-outline-dark border-0 rounded-5 mx-1">Skills</a>
                 </li>
                 <li>
-                    <a href="" class="btn btn-outline-dark border-0 rounded-5 mx-1">Project</a>
+                    <a href="#projects" class="btn btn-outline-dark border-0 rounded-5 mx-1">Projects</a>
                 </li>
                 <li>
-                    <a href="" class="btn btn-outline-dark border-0 rounded-5 mx-1 me-3">Contact</a>
+                    <a href="#contact" class="btn btn-outline-dark border-0 rounded-5 mx-1 me-3">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -53,17 +51,66 @@
             <h1 class="fw-bold">Shahan V Saleem</h1>
             <h2 class="text-secondary">Web Developer</h2>
             <div class="my-3">
-                <button class="btn btn-outline-dark rounded-5 p-2 px-3 m-1 fw-semibold">
-                    Download CV
-                </button>
-                <button class="btn btn-dark border-0 rounded-5 p-2 px-3 m-1 fw-semibold">
-                    Contact Info
-                </button>
+                <a href="./assets/Shahan.pdf" target="_blank">
+                    <button type="button" class="btn btn-outline-dark rounded-5 p-2 px-3 m-1 fw-semibold">
+                        Download CV
+                    </button>
+                </a>
+                <a href="#contact">
+                    <button type="button" class="btn btn-dark border-0 rounded-5 p-2 px-3 m-1 fw-semibold">
+                        Contact Info
+                    </button>
+                </a>
             </div>
             <div class="my-2">
-                <a href=""><i class="fa-brands fa-linkedin-in fs-3 m-2 text-dark"></i></a>
-                <a href=""><i class="fa-brands fa-github fs-3 m-2 text-dark"></i></a>
-                <a href=""><i class="fa-brands fa-x-twitter fs-3 m-2 text-dark"></i></a>
+                <a href="https://www.linkedin.com/in/shahanvsaleem/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in fs-3 m-2 text-dark"></i></a>
+                <a href="https://github.com/shahansv" target="_blank"><i
+                        class="fa-brands fa-github fs-3 m-2 text-dark"></i></a>
+                <a href="https://x.com/shahanvsaleem" target="_blank"><i
+                        class="fa-brands fa-x-twitter fs-3 m-2 text-dark"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div id="about_head" class="d-flex flex-column justify-content-end align-items-center">
+            <h6 class="text-secondary fw-semibold text-center">Get To Know More</h6>
+            <h1 class="fw-bold">About Me</h1>
+        </div>
+        <div id="about_me" class="row m-0">
+            <div class="col-5 d-flex justify-content-end align-items-center p-3">
+                <img src="./assets/about_img.jpg" alt="" class="img-fluid rounded-5" />
+            </div>
+            <div class="col-7 p-5 row m-0">
+                <div class="col-6 row m-0 align-items-center justify-content-center">
+                    <div
+                        class="border border-secondary rounded-5 p-3 d-flex flex-column justify-content-center align-items-center">
+                        <i class="fa-regular fa-medal fs-4 m-1"></i>
+                        <h5 class="m-1 fw-bold">Experience</h5>
+                        <p class="m-0 text-secondary">6+ months</p>
+                        <p class="m-0 text-secondary">Web Development</p>
+                    </div>
+                </div>
+                <div class="col-6 row m-0 align-items-center justify-content-center">
+                    <div
+                        class="border border-secondary rounded-5 p-3 d-flex flex-column justify-content-center align-items-center">
+                        <i class="fa-regular fa-user-graduate fs-4 m-1"></i>
+                        <h5 class="m-1 fw-bold">Education</h5>
+                        <p class="m-0 text-secondary">BSc Computer Science</p>
+                        <p class="m-0 text-secondary">University of Calicut</p>
+                    </div>
+                </div>
+
+                <div class="col-12" id="about_card">
+                    <p class="text-secondary">
+                        I'm a student developer passionate about crafting digital
+                        experiences. I love building intuitive web apps, exploring new
+                        technologies, and turning creative ideas into accessible
+                        tools.Specialize in transforming ideas into beautifully crafted
+                        products.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
