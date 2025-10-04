@@ -12,11 +12,6 @@
     border-radius: 8px;
 }
 
-/* Add padding to body to prevent navbar overlap */
-body {
-    padding-top: 8vh;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -28,11 +23,6 @@ html {
     scroll-margin-top: 12vh;
 }
 
-/* No scroll margin for home and contact */
-#home,
-#contact {
-    scroll-margin-top: 0;
-}
 
 /* Navbar styling - only custom effects that Bootstrap doesn't provide */
 nav {
@@ -86,6 +76,11 @@ ul {
 
 /* Mobile optimizations */
 @media (max-width: 768px) {
+    
+    body {
+    padding-top: 8vh;
+}
+    
     #img_container {
         max-width: 280px;
     }
