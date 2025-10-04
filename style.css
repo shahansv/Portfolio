@@ -16,15 +16,12 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Apply scroll padding only to specific sections (not home and contact) */
 #about,
 #skills,
 #projects {
     scroll-margin-top: 12vh;
 }
 
-
-/* Navbar styling - only custom effects that Bootstrap doesn't provide */
 nav {
     height: 8vh;
     background: #f5f5f52f;
@@ -32,13 +29,11 @@ nav {
     box-shadow: 0 4px 30px #0000001b;
     box-shadow: inset 0px 0px 8px 8px #ece9e955;
     z-index: 10;
-    width: 90%;
-    max-width: 1200px;
+    width: 80%;
     left: 50%;
     transform: translateX(-50%);
 }
 
-/* Remove default link styling */
 a {
     text-decoration: none;
 }
@@ -47,21 +42,18 @@ ul {
     list-style: none;
 }
 
-/* Home section - image container responsive sizing */
 #img_container {
     max-width: 350px;
     width: 100%;
 }
 
-/* About section - image responsive sizing */
 .about-img {
     max-width: 350px;
     width: 100%;
 }
 
-/* Project cards - hover effects not available in Bootstrap */
-.project-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.project-img-container {
+    height: 300px;
 }
 
 .project-card:hover {
@@ -69,26 +61,19 @@ ul {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Project image container fixed height */
-.project-img-container {
-    height: 300px;
-}
-
-/* Mobile optimizations */
 @media (max-width: 768px) {
-    
     body {
-    padding-top: 8vh;
-}
-    
+        padding-top: 8vh;
+    }
+
     #img_container {
         max-width: 280px;
     }
-    
+
     .about-img {
         max-width: 250px;
     }
-    
+
     .project-img-container {
         height: 200px;
     }
@@ -98,17 +83,17 @@ ul {
     body {
         padding-top: 10vh;
     }
-    
+
     nav {
         height: auto;
         min-height: 8vh;
         width: 95%;
     }
-    
+
     #img_container {
         max-width: 260px;
     }
-    
+
     .about-img {
         max-width: 200px;
     }
