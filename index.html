@@ -18,100 +18,116 @@
 
 <body>
     <header class="d-flex justify-content-center">
-        <nav class="mt-2 rounded-5 d-flex align-items-center justify-content-between">
-            <h5 class="m-0">
-                <a href="#home" class="text-dark ms-5">shahan.sv</a>
-            </h5>
-            <ul class="d-flex m-0">
-                <li>
-                    <a href="#home" class="btn btn-outline-dark border-0 rounded-5 mx-1">Home</a>
-                </li>
-                <li>
-                    <a href="#about" class="btn btn-outline-dark border-0 rounded-5 mx-1">About</a>
-                </li>
-                <li>
-                    <a href="#skills" class="btn btn-outline-dark border-0 rounded-5 mx-1">Skills</a>
-                </li>
-                <li>
-                    <a href="#projects" class="btn btn-outline-dark border-0 rounded-5 mx-1">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact" class="btn btn-outline-dark border-0 rounded-5 mx-1 me-3">Contact</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg mt-2 rounded-5 position-fixed top-0 px-3 px-lg-4">
+            <div class="container-fluid">
+                <h5 class="m-0">
+                    <a href="#home" class="navbar-brand text-dark fw-bold">shahan.sv</a>
+                </h5>
+                
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars fs-4"></i>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link btn btn-outline-dark border-0 rounded-5 mx-1 my-1">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link btn btn-outline-dark border-0 rounded-5 mx-1 my-1">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link btn btn-outline-dark border-0 rounded-5 mx-1 my-1">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link btn btn-outline-dark border-0 rounded-5 mx-1 my-1">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link btn btn-outline-dark border-0 rounded-5 mx-1 my-1">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section id="home" class="row m-0">
-        <div class="col-6 d-flex align-items-center justify-content-end p-4 m-0">
-            <div id="img_container">
-                <img src="./assets/shahan_hero_img.jpg" alt="shahan" class="img-fluid" />
+    <section id="home" class="container-fluid">
+        <div class="row min-vh-100 align-items-center justify-content-center m-0 ">
+            <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-end p-3 p-md-4 mb-3 mb-lg-0 order-1 order-lg-1">
+                <div id="img_container" class="ratio ratio-1x1">
+                    <img src="./assets/shahan_hero_img.jpg" alt="Shahan V Saleem - Professional portrait of web developer" class="rounded-circle object-fit-cover" />
+                </div>
             </div>
-        </div>
-        <div class="col-6 d-flex flex-column align-items-start justify-content-center p-5 m-0">
-            <h6 class="text-secondary fw-semibold">Hello, I'm</h6>
-            <h1 class="fw-bold">Shahan V Saleem</h1>
-            <h2 class="text-secondary">Web Developer</h2>
-            <div class="my-3">
-                <a href="./assets/Shahan.pdf" target="_blank">
-                    <button type="button" class="btn btn-outline-dark rounded-5 p-2 px-3 m-1 fw-semibold">
-                        Download CV
-                    </button>
-                </a>
-                <a href="#contact">
-                    <button type="button" class="btn btn-dark border-0 rounded-5 p-2 px-3 m-1 fw-semibold">
-                        Contact Info
-                    </button>
-                </a>
-            </div>
-            <div class="my-2">
-                <a href="https://www.linkedin.com/in/shahanvsaleem/" target="_blank"><i
-                        class="fa-brands fa-linkedin-in fs-3 m-2 text-dark"></i></a>
-                <a href="https://github.com/shahansv" target="_blank"><i
-                        class="fa-brands fa-github fs-3 m-2 text-dark"></i></a>
-                <a href="https://x.com/shahanvsaleem" target="_blank"><i
-                        class="fa-brands fa-x-twitter fs-3 m-2 text-dark"></i></a>
+            <div class="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start justify-content-center p-3 p-md-4 p-lg-5 order-2 order-lg-2 text-center text-lg-start">
+                <h6 class="text-secondary fw-semibold mb-2">Hello, I'm</h6>
+                <h1 class="fw-bold mb-2">Shahan V Saleem</h1>
+                <h2 class="text-secondary fs-4 mb-3">Web Developer</h2>
+                <div class="d-flex flex-column flex-sm-row gap-2 w-100 my-3" style="max-width: 400px;">
+                    <a href="./assets/Shahan.pdf" target="_blank" class="flex-fill">
+                        <button type="button" class="btn btn-outline-dark rounded-5 py-2 px-3 fw-semibold w-100">
+                            Download CV
+                        </button>
+                    </a>
+                    <a href="#contact" class="flex-fill">
+                        <button type="button" class="btn btn-dark border-0 rounded-5 py-2 px-3 fw-semibold w-100">
+                            Contact Info
+                        </button>
+                    </a>
+                </div>
+                <div class="d-flex gap-2 my-2">
+                    <a href="https://www.linkedin.com/in/shahanvsaleem/" target="_blank" aria-label="LinkedIn Profile" class="text-dark">
+                        <i class="fa-brands fa-linkedin-in fs-3"></i>
+                    </a>
+                    <a href="https://github.com/shahansv" target="_blank" aria-label="GitHub Profile" class="text-dark">
+                        <i class="fa-brands fa-github fs-3"></i>
+                    </a>
+                    <a href="https://x.com/shahanvsaleem" target="_blank" aria-label="X (Twitter) Profile" class="text-dark">
+                        <i class="fa-brands fa-x-twitter fs-3"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about">
-        <div id="about_head" class="d-flex flex-column justify-content-end align-items-center">
-            <h6 class="text-secondary fw-semibold text-center">Get To Know More</h6>
-            <h1 class="fw-bold">About Me</h1>
-        </div>
-        <div id="about_me" class="row m-0 align-items-center">
-            <div class="col-5 d-flex justify-content-end align-items-center p-3">
-                <img src="./assets/about_img.jpg" alt="" class="img-fluid rounded-5" />
+    <section id="about" class="container-fluid min-vh-100 d-flex flex-column section-with-scroll-padding">
+        <div class="row flex-grow-0 py-3 py-md-4 m-0">
+            <div class="col-12 text-center">
+                <h6 class="text-secondary fw-semibold mb-2">Get To Know More</h6>
+                <h1 class="fw-bold">About Me</h1>
             </div>
-            <div class="col-7 p-5">
-                <div class="row m-0 mb-3">
-                    <div class="col-6 px-2">
-                        <div
-                            class="border border-secondary rounded-5 p-3 d-flex flex-column justify-content-center align-items-center">
-                            <i class="fa-regular fa-medal fs-4 m-1"></i>
-                            <h5 class="m-1 fw-bold">Experience</h5>
-                            <p class="m-0 text-secondary">2+ months</p>
-                            <p class="m-0 text-secondary">Web Development</p>
+        </div>
+        <div class="row flex-grow-1 align-items-center m-0">
+            <div class="col-12 col-lg-5 d-flex justify-content-center justify-content-lg-end align-items-center p-3 mb-4 mb-lg-0">
+                <img src="./assets/about_img.jpg" alt="Shahan V Saleem working on web development projects" class="img-fluid rounded-5 about-img" />
+            </div>
+            <div class="col-12 col-lg-7 p-3 p-lg-5">
+                <div class="row g-3 mb-3">
+                    <div class="col-12 col-sm-6">
+                        <div class="border border-secondary rounded-5 p-3 p-lg-4 d-flex flex-column justify-content-center align-items-center h-100">
+                            <i class="fa-regular fa-medal fs-4 mb-2"></i>
+                            <h5 class="fw-bold mb-2">Experience</h5>
+                            <p class="mb-1 text-secondary text-center">2+ months</p>
+                            <p class="mb-0 text-secondary text-center">Web Development</p>
                         </div>
                     </div>
-                    <div class="col-6 px-2">
-                        <div
-                            class="border border-secondary rounded-5 p-3 d-flex flex-column justify-content-center align-items-center">
-                            <i class="fa-regular fa-user-graduate fs-4 m-1"></i>
-                            <h5 class="m-1 fw-bold">Education</h5>
-                            <p class="m-0 text-secondary">BSc Computer Science</p>
-                            <p class="m-0 text-secondary">University of Calicut</p>
+                    <div class="col-12 col-sm-6">
+                        <div class="border border-secondary rounded-5 p-3 p-lg-4 d-flex flex-column justify-content-center align-items-center h-100">
+                            <i class="fa-regular fa-user-graduate fs-4 mb-2"></i>
+                            <h5 class="fw-bold mb-2">Education</h5>
+                            <p class="mb-1 text-secondary text-center">BSc Computer Science</p>
+                            <p class="mb-0 text-secondary text-center">University of Calicut</p>
                         </div>
                     </div>
                 </div>
-                <div class="row m-0">
-                    <div class="col-12" id="about_card">
-                        <p class="text-secondary">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-secondary text-center text-lg-start mb-0">
                             I'm a student developer passionate about crafting digital
                             experiences. I love building intuitive web apps, exploring new
                             technologies, and turning creative ideas into accessible
-                            tools.Specialize in transforming ideas into beautifully crafted
+                            tools. Specialize in transforming ideas into beautifully crafted
                             products.
                         </p>
                     </div>
@@ -120,121 +136,50 @@
         </div>
     </section>
 
-    <section id="skills">
-        <div id="skills_head" class="d-flex flex-column justify-content-end align-items-center">
-            <h6 class="text-secondary fw-semibold text-center">My Technical</h6>
-            <h1 class="fw-bold">Skills</h1>
-        </div>
-        <div id="skills_container" class="d-flex justify-content-center align-items-center p-5">
-            <div class="row m-0 w-75">
-                <div class="col-4 p-2">
-                    <div class="border border-secondary rounded-4 p-4 d-flex align-items-center">
-                        <i class="fa-brands fa-html5 fs-2 me-3 text-dark"></i>
-                        <h5 class="m-0">HTML</h5>
-                    </div>
-                </div>
-                <div class="col-4 p-2">
-                    <div class="border border-secondary rounded-4 p-4 d-flex align-items-center">
-                        <i class="fa-brands fa-css3-alt fs-2 me-3 text-dark"></i>
-                        <h5 class="m-0">CSS</h5>
-                    </div>
-                </div>
-                <div class="col-4 p-2">
-                    <div class="border border-secondary rounded-4 p-4 d-flex align-items-center">
-                        <i class="fa-brands fa-js fs-2 me-3 text-dark"></i>
-                        <h5 class="m-0">JavaScript</h5>
-                    </div>
-                </div>
-                <div class="col-4 p-2">
-                    <div class="border border-secondary rounded-4 p-4 d-flex align-items-center">
-                        <i class="fa-brands fa-bootstrap fs-2 me-3 text-dark"></i>
-                        <h5 class="m-0">Bootstrap</h5>
-                    </div>
-                </div>
-                <div class="col-4 p-2">
-                    <div class="border border-secondary rounded-4 p-4 d-flex align-items-center">
-                        <i class="fa-brands fa-git-alt fs-2 me-3 text-dark"></i>
-                        <h5 class="m-0">GIT</h5>
-                    </div>
-                </div>
-                <div class="col-4 p-2">
-                    <div class="border border-secondary rounded-4 p-4 d-flex align-items-center">
-                        <i class="fa-brands fa-github fs-2 me-3 text-dark"></i>
-                        <h5 class="m-0">GITHUB</h5>
-                    </div>
-                </div>
+    <section id="skills" class="container-fluid min-vh-100 d-flex flex-column section-with-scroll-padding">
+        <div class="row flex-grow-0 py-3 py-md-4 m-0">
+            <div class="col-12 text-center">
+                <h6 class="text-secondary fw-semibold mb-2">My Technical</h6>
+                <h1 class="fw-bold">Skills</h1>
             </div>
         </div>
-    </section>
-
-    <section id="projects">
-        <div id="project_head" class="d-flex flex-column justify-content-end align-items-center">
-            <h6 class="text-secondary fw-semibold text-center">Browse My Recent</h6>
-            <h1 class="fw-bold">Projects</h1>
-        </div>
-        <div id="project_container" class="d-flex justify-content-center align-items-center p-4">
-            <div class="row m-0 w-100 justify-content-center">
-                <div class="col-12 col-md-6 col-lg-4 p-3">
-                    <div
-                        class="project-card border border-secondary rounded-5 p-4 d-flex flex-column align-items-center">
-                        <div class="project-img-container mb-3">
-                            <img src="./assets/Veyran Shadow of Steel.png" alt="Veyran Shadow of Steel"
-                                class="img-fluid rounded-4" />
-                        </div>
-                        <h3 class="fw-bold mb-3">Veyran:Shadow of Steel</h3>
-                        <div class="d-flex gap-3">
-                            <a href="https://github.com/shahansv/Veyran-Shadow-of-Steel" target="_blank">
-                                <button class="btn btn-outline-dark rounded-5 px-4 py-2">
-                                    Github
-                                </button>
-                            </a>
-                            <a href="https://shahansv.github.io/Veyran-Shadow-of-Steel/" target="_blank">
-                                <button class="btn btn-dark rounded-5 px-4 py-2">
-                                    Live Demo
-                                </button>
-                            </a>
+        <div class="row flex-grow-1 align-items-center justify-content-center p-3 p-lg-5 m-0">
+            <div class="col-12 col-lg-10 col-xl-9">
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="border border-secondary rounded-4 p-3 p-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <i class="fa-brands fa-html5 fs-2 me-3 text-dark"></i>
+                            <h5 class="mb-0">HTML</h5>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 p-3">
-                    <div
-                        class="project-card border border-secondary rounded-5 p-4 d-flex flex-column align-items-center">
-                        <div class="project-img-container mb-3">
-                            <img src="./assets/sprite.png" alt="sprite" class="img-fluid rounded-4" />
-                        </div>
-                        <h3 class="fw-bold mb-3">Sprite</h3>
-                        <div class="d-flex gap-3">
-                            <a href="https://github.com/shahansv/Sprite-Animation" target="_blank">
-                                <button class="btn btn-outline-dark rounded-5 px-4 py-2">
-                                    Github
-                                </button>
-                            </a>
-                            <a href="https://sprite-sv.vercel.app/" target="_blank">
-                                <button class="btn btn-dark rounded-5 px-4 py-2">
-                                    Live Demo
-                                </button>
-                            </a>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="border border-secondary rounded-4 p-3 p-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <i class="fa-brands fa-css3-alt fs-2 me-3 text-dark"></i>
+                            <h5 class="mb-0">CSS</h5>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 p-3">
-                    <div
-                        class="project-card border border-secondary rounded-5 p-4 d-flex flex-column align-items-center">
-                        <div class="project-img-container mb-3">
-                            <img src="./assets/Not Burger King.png" alt="Not Burger King" class="img-fluid rounded-4" />
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="border border-secondary rounded-4 p-3 p-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <i class="fa-brands fa-js fs-2 me-3 text-dark"></i>
+                            <h5 class="mb-0">JavaScript</h5>
                         </div>
-                        <h3 class="fw-bold mb-3">Not Burger King</h3>
-                        <div class="d-flex gap-3">
-                            <a href="https://github.com/shahansv/Not-Burger-King" target="_blank">
-                                <button class="btn btn-outline-dark rounded-5 px-4 py-2">
-                                    Github
-                                </button>
-                            </a>
-                            <a href="https://shahansv.github.io/Not-Burger-King/" target="_blank">
-                                <button class="btn btn-dark rounded-5 px-4 py-2">
-                                    Live Demo
-                                </button>
-                            </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="border border-secondary rounded-4 p-3 p-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <i class="fa-brands fa-bootstrap fs-2 me-3 text-dark"></i>
+                            <h5 class="mb-0">Bootstrap</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="border border-secondary rounded-4 p-3 p-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <i class="fa-brands fa-git-alt fs-2 me-3 text-dark"></i>
+                            <h5 class="mb-0">GIT</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="border border-secondary rounded-4 p-3 p-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <i class="fa-brands fa-github fs-2 me-3 text-dark"></i>
+                            <h5 class="mb-0">GITHUB</h5>
                         </div>
                     </div>
                 </div>
@@ -242,33 +187,111 @@
         </div>
     </section>
 
-    <section id="contact">
-        <div id="contact_container" class="d-flex flex-column justify-content-center align-items-center">
-            <h6 class="text-secondary fw-semibold text-center">Get in Touch</h6>
-            <h1 class="fw-bold text-center">Contact Me</h1>
+    <section id="projects" class="container-fluid min-vh-100 d-flex flex-column section-with-scroll-padding">
+        <div class="row flex-grow-0 py-3 py-md-4 m-0">
+            <div class="col-12 text-center">
+                <h6 class="text-secondary fw-semibold mb-2">Browse My Recent</h6>
+                <h1 class="fw-bold">Projects</h1>
+            </div>
+        </div>
+        <div class="row flex-grow-1 align-items-center justify-content-center p-3 p-lg-4 m-0">
+            <div class="col-12">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="project-card border border-secondary rounded-5 p-4 d-flex flex-column align-items-center h-100">
+                            <div class="project-img-container mb-3 w-100 overflow-hidden rounded-4">
+                                <img src="./assets/Veyran Shadow of Steel.png" alt="Veyran Shadow of Steel game project showcase"
+                                    class="img-fluid w-100 h-100 object-fit-cover" />
+                            </div>
+                            <h3 class="fw-bold mb-3 text-center">Veyran: Shadow of Steel</h3>
+                            <div class="d-flex flex-column flex-sm-row gap-3 w-100 mt-auto">
+                                <a href="https://github.com/shahansv/Veyran-Shadow-of-Steel" target="_blank" class="flex-fill">
+                                    <button class="btn btn-outline-dark rounded-5 px-4 py-2 w-100">
+                                        Github
+                                    </button>
+                                </a>
+                                <a href="https://shahansv.github.io/Veyran-Shadow-of-Steel/" target="_blank" class="flex-fill">
+                                    <button class="btn btn-dark rounded-5 px-4 py-2 w-100">
+                                        Live Demo
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="project-card border border-secondary rounded-5 p-4 d-flex flex-column align-items-center h-100">
+                            <div class="project-img-container mb-3 w-100 overflow-hidden rounded-4">
+                                <img src="./assets/sprite.png" alt="Sprite animation project demonstration"
+                                    class="img-fluid w-100 h-100 object-fit-cover" />
+                            </div>
+                            <h3 class="fw-bold mb-3 text-center">Sprite</h3>
+                            <div class="d-flex flex-column flex-sm-row gap-3 w-100 mt-auto">
+                                <a href="https://github.com/shahansv/Sprite-Animation" target="_blank" class="flex-fill">
+                                    <button class="btn btn-outline-dark rounded-5 px-4 py-2 w-100">
+                                        Github
+                                    </button>
+                                </a>
+                                <a href="https://sprite-sv.vercel.app/" target="_blank" class="flex-fill">
+                                    <button class="btn btn-dark rounded-5 px-4 py-2 w-100">
+                                        Live Demo
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="project-card border border-secondary rounded-5 p-4 d-flex flex-column align-items-center h-100">
+                            <div class="project-img-container mb-3 w-100 overflow-hidden rounded-4">
+                                <img src="./assets/Not Burger King.png" alt="Not Burger King restaurant website project"
+                                    class="img-fluid w-100 h-100 object-fit-cover" />
+                            </div>
+                            <h3 class="fw-bold mb-3 text-center">Not Burger King</h3>
+                            <div class="d-flex flex-column flex-sm-row gap-3 w-100 mt-auto">
+                                <a href="https://github.com/shahansv/Not-Burger-King" target="_blank" class="flex-fill">
+                                    <button class="btn btn-outline-dark rounded-5 px-4 py-2 w-100">
+                                        Github
+                                    </button>
+                                </a>
+                                <a href="https://shahansv.github.io/Not-Burger-King/" target="_blank" class="flex-fill">
+                                    <button class="btn btn-dark rounded-5 px-4 py-2 w-100">
+                                        Live Demo
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <div class="d-flex justify-content-center align-items-center w-50 border rounded-5 p-4 m-4">
-                <i class="fa-regular fa-envelope m-2 fs-4"></i>
-                <h5>
-                    <a href="mailto:shahanvsaleem@gmail.com" class="text-dark">shahanvsaleem@gmail.com</a>
-                </h5>
+    <section id="contact" class="container-fluid min-vh-100 d-flex flex-column">
+        <div class="row flex-grow-1 align-items-center justify-content-center m-0 px-3">
+            <div class="col-12 col-md-10 col-lg-8 text-center">
+                <h6 class="text-secondary fw-semibold mb-2">Get in Touch</h6>
+                <h1 class="fw-bold mb-4">Contact Me</h1>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center border rounded-5 p-3 p-lg-4 mx-auto" style="max-width: 600px;">
+                    <i class="fa-regular fa-envelope fs-4 me-sm-3 mb-2 mb-sm-0"></i>
+                    <h5 class="mb-0 text-center text-sm-start">
+                        <a href="mailto:shahanvsaleem@gmail.com" class="text-dark text-break">shahanvsaleem@gmail.com</a>
+                    </h5>
+                </div>
             </div>
         </div>
 
-        <footer>
-            <div class="h-50 d-flex align-items-end justify-content-center">
-                <h5 class="mx-4"><a href="#home" class="text-dark">Home</a></h5>
-                <h5 class="mx-4"><a href="#about" class="text-dark">About</a></h5>
-                <h5 class="mx-4"><a href="#skills" class="text-dark">Skills</a></h5>
-                <h5 class="mx-4">
-                    <a href="#projects" class="text-dark">Project</a>
-                </h5>
+        <footer class="row flex-grow-0 m-0">
+            <div class="col-12 d-flex flex-wrap align-items-center justify-content-center gap-3 gap-sm-4 py-3 px-3">
+                <h5 class="mb-0"><a href="#home" class="text-dark text-decoration-none">Home</a></h5>
+                <h5 class="mb-0"><a href="#about" class="text-dark text-decoration-none">About</a></h5>
+                <h5 class="mb-0"><a href="#skills" class="text-dark text-decoration-none">Skills</a></h5>
+                <h5 class="mb-0"><a href="#projects" class="text-dark text-decoration-none">Projects</a></h5>
             </div>
-            <div class="h-50 d-flex justify-content-center align-items-end">
-                <p class="text-secondary">
+            <div class="col-12 d-flex justify-content-center align-items-center px-3 pb-3">
+                <p class="text-secondary text-center mb-0">
                     Copyright &copy; 2025
                     <a href="https://www.linkedin.com/in/shahanvsaleem/" target="_blank"
-                        class="text-dark fw-bold">shahan.sv</a>. All Rights Reserved.
+                        class="text-dark fw-bold text-decoration-none">shahan.sv</a>. All Rights Reserved.
                 </p>
             </div>
         </footer>
